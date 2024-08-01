@@ -3,15 +3,15 @@ import CoreLocation
 
 struct StoreDetailView: View {
     @EnvironmentObject var locationManager: LocationManager
-    let store: IceCreamStore
+    @Binding var selectedStore: IceCreamStore?
 
     var body: some View {
         VStack {
-            if let userLocation = locationManager.location, let heading = locationManager.heading {
+            if let store = selectedStore, let userLocation = locationManager.location, let heading = locationManager.heading {
                 ArrowView(direction: calculateDirection(userLocation: userLocation, storeLocation: CLLocation(latitude: store.latitude, longitude: store.longitude), heading: heading))
                     .frame(width: 200, height: 200)
                 
-                Text("Distance: \(distance(from: userLocation)) km")
+                Text("Distance: \(distance(from: userLocation, to: store)) km")
                     .padding(.top, 20)
                     .font(.title)
             } else {
@@ -22,7 +22,7 @@ struct StoreDetailView: View {
             Spacer()
         }
         .padding()
-        .navigationTitle(store.name)
+        .navigationTitle(selectedStore?.name ?? "Store Detail")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             locationManager.startUpdating()
@@ -30,6 +30,11 @@ struct StoreDetailView: View {
         .onDisappear {
             locationManager.stopUpdating()
         }
+        .navigationBarItems(trailing: Button(action: {
+            selectedStore = nil
+        }) {
+            Image(systemName: "list.bullet")
+        })
     }
     
     private func calculateDirection(userLocation: CLLocation, storeLocation: CLLocation, heading: CLHeading) -> Double {
@@ -52,7 +57,7 @@ struct StoreDetailView: View {
         return (bearing + 360).truncatingRemainder(dividingBy: 360)
     }
 
-    private func distance(from location: CLLocation) -> String {
+    private func distance(from location: CLLocation, to store: IceCreamStore) -> String {
         let storeLocation = CLLocation(latitude: store.latitude, longitude: store.longitude)
         let distanceInMeters = location.distance(from: storeLocation)
         let distanceInKilometers = distanceInMeters / 1000
