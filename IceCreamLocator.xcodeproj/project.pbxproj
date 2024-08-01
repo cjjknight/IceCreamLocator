@@ -18,6 +18,7 @@
 		8B8835042C5C3A0F0068E03B /* StoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8835032C5C3A0F0068E03B /* StoreListView.swift */; };
 		8B8835062C5C3A190068E03B /* StoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8835052C5C3A190068E03B /* StoreDetailView.swift */; };
 		8B8835082C5C3B690068E03B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8835072C5C3B690068E03B /* LocationManager.swift */; };
+		8B88350A2C5C3D4E0068E03B /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8835092C5C3D4E0068E03B /* ArrowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8B8835032C5C3A0F0068E03B /* StoreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListView.swift; sourceTree = "<group>"; };
 		8B8835052C5C3A190068E03B /* StoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailView.swift; sourceTree = "<group>"; };
 		8B8835072C5C3B690068E03B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8B8835092C5C3D4E0068E03B /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				8B8834D42C5C39250068E03B /* ContentView.swift */,
 				8B8835072C5C3B690068E03B /* LocationManager.swift */,
 				8B8835032C5C3A0F0068E03B /* StoreListView.swift */,
+				8B8835092C5C3D4E0068E03B /* ArrowView.swift */,
 				8B8835052C5C3A190068E03B /* StoreDetailView.swift */,
 				8B8834D62C5C39250068E03B /* Item.swift */,
 				8B8834D82C5C39260068E03B /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 				8B8835082C5C3B690068E03B /* LocationManager.swift in Sources */,
 				8B8835042C5C3A0F0068E03B /* StoreListView.swift in Sources */,
 				8B8835062C5C3A190068E03B /* StoreDetailView.swift in Sources */,
+				8B88350A2C5C3D4E0068E03B /* ArrowView.swift in Sources */,
 				8B8834D32C5C39250068E03B /* IceCreamLocatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
