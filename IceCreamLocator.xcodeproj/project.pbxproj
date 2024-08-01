@@ -17,6 +17,7 @@
 		8B8834F32C5C39260068E03B /* IceCreamLocatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8834F22C5C39260068E03B /* IceCreamLocatorUITestsLaunchTests.swift */; };
 		8B8835042C5C3A0F0068E03B /* StoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8835032C5C3A0F0068E03B /* StoreListView.swift */; };
 		8B8835062C5C3A190068E03B /* StoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8835052C5C3A190068E03B /* StoreDetailView.swift */; };
+		8B8835082C5C3B690068E03B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8835072C5C3B690068E03B /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8B8834F22C5C39260068E03B /* IceCreamLocatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamLocatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8B8835032C5C3A0F0068E03B /* StoreListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreListView.swift; sourceTree = "<group>"; };
 		8B8835052C5C3A190068E03B /* StoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailView.swift; sourceTree = "<group>"; };
+		8B8835072C5C3B690068E03B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				8B8834D22C5C39250068E03B /* IceCreamLocatorApp.swift */,
 				8B8834D42C5C39250068E03B /* ContentView.swift */,
+				8B8835072C5C3B690068E03B /* LocationManager.swift */,
 				8B8835032C5C3A0F0068E03B /* StoreListView.swift */,
 				8B8835052C5C3A190068E03B /* StoreDetailView.swift */,
 				8B8834D62C5C39250068E03B /* Item.swift */,
@@ -270,6 +273,7 @@
 			files = (
 				8B8834D52C5C39250068E03B /* ContentView.swift in Sources */,
 				8B8834D72C5C39250068E03B /* Item.swift in Sources */,
+				8B8835082C5C3B690068E03B /* LocationManager.swift in Sources */,
 				8B8835042C5C3A0F0068E03B /* StoreListView.swift in Sources */,
 				8B8835062C5C3A190068E03B /* StoreDetailView.swift in Sources */,
 				8B8834D32C5C39250068E03B /* IceCreamLocatorApp.swift in Sources */,
@@ -436,6 +440,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby ice cream stores.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -474,6 +479,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby ice cream stores.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
